@@ -15,7 +15,7 @@ function runNwDev(uri = '') {
   }
 
   var closed
-  var nwDev = exec('nw . ' + rootPath, { cwd: rootPath }, function(err, stdout, stderr) {
+  var nwDev = exec(nwPath + ' ' + rootPath, { cwd: rootPath }, function(err, stdout, stderr) {
     process.exit(0)
     closed = true
   })
